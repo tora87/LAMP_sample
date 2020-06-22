@@ -63,7 +63,7 @@ try {
 
         <div class="tab-content">
             <div class="tab-pane active" id="select">
-                <table class="table table-dark">
+                <table class="table table-dark table-striped">
                     <thead class="thead-dark">
                         <tr>
                             <th>Id</th>
@@ -74,7 +74,7 @@ try {
                     <tbody>
                         <?php foreach($result as $value) {?> 
                             <tr>
-                                <td><?php echo '$value[id]';?></td>
+                                <th><?php echo '$value[id]';?></th>
                                 <td><?php echo '$value[name]';?></td>
                                 <td><?php echo '$value[age]';?></td>
                             </tr>
