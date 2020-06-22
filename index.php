@@ -5,7 +5,7 @@ $password = 'LFO:Nirvash0';
 try {
     $dbh = new PDO($dsn, $user, $password);
 ​
-    $sql = "select * from sample;";
+    $sql = "select * from sample";
     $result = $dbh->query($sql);
 } catch (PDOException $e) {
     print "Failed Connect: " . $e->getMessage() . "\n";
