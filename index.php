@@ -1,4 +1,19 @@
+<?php
+$dsn = 'mysql:dbname=test_DB;host=localhost;';
+$user = 'tora';
+$password = 'LFO:Nirvash';
+try {
+    $dbh = new PDO($dsn, $user, $password);
 
+    $sql = "select * from user";
+    $result = $dbh->query($sql);
+
+} catch (PDOException $e) {
+    print "Failed Connect: " . $e->getMessage() . "\n";
+    exit();
+}
+?>
+​
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -57,7 +72,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        <?php foreach($result as $value) { ?> 
+                            <tr>
+                                <th><?php echo "$value[id]"; ?></th>
+                                <td><?php echo "$value[name]"; ?></td>
+                                <td><?php echo "$value[age]"; ?></td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
