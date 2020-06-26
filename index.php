@@ -72,7 +72,13 @@ try {
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        <?php foreach($result as $value) { ?> 
+                            <tr>
+                                <th><?php echo "$value[id]"; ?></th>
+                                <td><?php echo "$value[name]"; ?></td>
+                                <td><?php echo "$value[age]"; ?></td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
