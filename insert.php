@@ -18,7 +18,7 @@ try {
     header('Location: index.php?flg=1');
 
 } catch (PDOException $e) {
-    header('Location: index.php?flg=2$err='.$e->getMeesage());
+    header('Location: index.php?flg=2?err='.$e->getMeesage());
     exit();
 }
 ?>
