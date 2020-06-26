@@ -61,7 +61,7 @@ try {
             </li>
         </ul>
 
-        <div class="tab-content">
+        <div class="tab-content mt-3">
             <div class="tab-pane active" id="select">
                 <table class="table table-dark table-striped">
                     <thead class="thead-dark">
