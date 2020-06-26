@@ -15,10 +15,10 @@ try {
     $prams = array(':id'=> $id, ':name'=> $name, ':age'=> $age);
     $stmt->exeute($prams);
     
-    header('Location: idnex.php?flg=1')
+    header('Location: index.php?flg=1')
 
 } catch (PDOException $e) {
-    header('Location: idnex.php?flg=2$err='.$e->getMeesage());
+    header('Location: index.php?flg=2$err='.$e->getMeesage());
     exit();
 }
 ?>
