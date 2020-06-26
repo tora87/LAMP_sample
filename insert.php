@@ -13,9 +13,9 @@ try {
     $sql = "insert into user values (:id, :name, :age)";
     $stmt = $dbh->prepare($sql);
     $prams = array(':id'=> $id, ':name'=> $name, ':age'=> $age);
-    $stmt->exeute($prams);
+    $stmt->execute($prams);
     
-    header('Location: index.php?flg=1')
+    header('Location: index.php?flg=1');
 
 } catch (PDOException $e) {
     header('Location: index.php?flg=2$err='.$e->getMeesage());
