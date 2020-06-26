@@ -1,11 +1,11 @@
 <?php
 $dsn = 'mysql:dbname=test_DB;host=localhost;';
-$user = 'toranosuke';
-$password = 'LFO:Nirvash0';
+$user = 'tora';
+$password = 'LFO:Nirvash';
 try {
     $dbh = new PDO($dsn, $user, $password);
 ​
-    $sql = "select * from sample";
+    $sql = "select * from user";
     $result = $dbh->query($sql);
 } catch (PDOException $e) {
     print "Failed Connect: " . $e->getMessage() . "\n";
