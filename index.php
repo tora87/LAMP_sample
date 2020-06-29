@@ -37,7 +37,6 @@ try {
                 <br>デザインはBootstrapを使用
             </p>
         </div>
-        aaa
     </div>
 
     <?php if($_GET['fg'] == 1) { ?>
@@ -57,6 +56,7 @@ try {
     <?php } ?>
 
     <div class="container">
+        aaa
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a href="#select" class="nav-link active" data-toggle="tab">
