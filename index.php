@@ -36,8 +36,8 @@ try {
             <p class="read">LAMP環境を構築し，データベース管理webアプリを作成しています。
                 <br>デザインはBootstrapを使用
             </p>
-            aaa
         </div>
+        aaa
     </div>
 
     <?php if($_GET['fg'] == 1) { ?>
