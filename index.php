@@ -149,10 +149,12 @@ try {
                                 <th><?php echo "$value[id]"; ?></th>
                                 <td><?php echo "$value[name]"; ?></td>
                                 <td><?php echo "$value[age]"; ?></td>
-                                <form action="./delete.php" method="GET">
-                                    <input type="text" class="d-none" name= "id" value="<?php echo "$value[id]"; ?>">
-                                    <button class="btn btn-dangere" type="submit">delete</button>
-                                </form>
+                                <td>
+                                    <form action="./delete.php" method="GET">
+                                        <input type="text" class="d-none" name= "id" value="<?php echo "$value[id]"; ?>">
+                                        <button class="btn btn-dangere" type="submit">delete</button>
+                                    </form>
+                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>
