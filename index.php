@@ -7,6 +7,7 @@ try {
 
     $sql = "select * from user";
     $result = $dbh->query($sql);
+    $result2 = $dbh->query($sql);
 
 } catch (PDOException $e) {
     print "Failed Connect: " . $e->getMessage() . "\n";
@@ -133,7 +134,31 @@ try {
                 </form>
             </div>
             <div class="tab-pane" id="delete">
-                <p>sample tab4</p>
+            <table class="table table-dark table-striped">
+                    <thead class="text-success">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach($result2 as $value) { ?> 
+                            <tr>
+                                <th><?php echo "$value[id]"; ?></th>
+                                <td><?php echo "$value[name]"; ?></td>
+                                <td><?php echo "$value[age]"; ?></td>
+                                <td>
+                                    <form action="./delete.php" method="GET">
+                                        <input type="text" class="d-none" name= "id" value="<?php echo "$value[id]"; ?>">
+                                        <button class="btn btn-dangere" type="submit">delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
