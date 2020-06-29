@@ -39,11 +39,11 @@ try {
         </div>
     </div>
 
-    <?php if($_GET['fg'] == 1){?>
+    <?php if($_GET['fg'] == 1) { ?>
         <p>Success</p>
-    <?php}else if($_GET['fg'] == 2){?>
+    <?php } else if($_GET['fg'] == 2) { ?>
         <p>Failed</p>
-    <?php}?>
+    <?php } ?>
 
     <div class="container">
         <ul class="nav nav-tabs">
@@ -159,7 +159,7 @@ try {
                                 <td>
                                     <form action="./delete.php" method="GET">
                                         <input type="text" class="d-none" name= "id" value="<?php echo "$value[id]"; ?>">
-                                        <button class="btn btn-dangere" type="submit">delete</button>
+                                        <button class="btn" type="submit">delete</button>
                                     </form>
                                 </td>
                             </tr>
