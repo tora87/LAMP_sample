@@ -40,9 +40,19 @@ try {
     </div>
 
     <?php if($_GET['fg'] == 1) { ?>
-        <p>Success</p>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Processing Success!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
     <?php } else if($_GET['fg'] == 2) { ?>
-        <p>Failed</p>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Processing Failed...</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
     <?php } ?>
 
     <div class="container">
