@@ -64,7 +64,7 @@ try {
         <div class="tab-content mt-3">
             <div class="tab-pane active" id="select">
                 <table class="table table-dark table-striped">
-                    <thead class="thead-dark">
+                    <thead class="text-info">
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
